@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <base href="/">
+
+    <!-- Meta-Information -->
+    <title>Angular Boilerplate</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Angular Boilerplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Our Website CSS Styles -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body ng-app="app">
+<!--[if lt IE 7]>
+<p class="browsehappy">Você está usando um navegador <strong>desatualizado</strong>. Por favor <a href="http://browsehappy.com/">atualize seu navegador</a> para melhorar a sua experiência.</p>
+<![endif]-->
+
+<!-- Our Website Content Goes Here -->
+<div class="wrapper">
+    <section id="header" ng-include='"templates/header.html"'></section>
+    <section id="main" ng-view></section>
+    <div class="push"></div>
+</div>
+<section id="footer" ng-include='"templates/footer.html"'></section>
+
+<!-- Vendor: Javascripts -->
+<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Vendor: Angular, followed by our custom Javascripts -->
+
+<!-- The full version outputs errors in a human readable way -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+
+<!-- In production use this
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+-->
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+
+<!-- Our Website Javascripts -->
+<script src="/js/app.js"></script>
+<script src="/components/home/homeController.js"></script>
+<script src="/components/page/pageController.js"></script>
+</body>
+</html>
